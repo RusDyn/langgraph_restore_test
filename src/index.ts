@@ -3,10 +3,9 @@ import 'source-map-support/register';
 
 import { PlatformExpress } from '@tsed/platform-express';
 
-
+import { Server } from '@/server';
 import { Logger } from '@domain/shared';
 import { bootstrap } from '@infrastructure/shared';
-import { Server } from '@/server';
 
 const start = async (): Promise<void> => {
   await bootstrap();

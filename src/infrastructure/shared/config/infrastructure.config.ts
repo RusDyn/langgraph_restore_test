@@ -14,11 +14,8 @@ const GlobalConfig = Object.freeze({
 
 const DatabaseConfig = Object.freeze({
   DB_TYPE: getEnvironmentString('DB_TYPE', 'postgresql') as any,
-  DB_HOST: getEnvironmentString('DB_HOST', 'localhost'),
-  DB_PORT: getEnvironmentNumber('DB_PORT', 5432),
-  DB_USER: getEnvironmentString('DB_USER'),
-  DB_PASSWORD: getEnvironmentString('DB_PASSWORD'),
-  DB_NAME: getEnvironmentString('DB_NAME')
+  DB_URL: getEnvironmentString('DB_URL'),
+  DB_DIRECT_URL: getEnvironmentString('DB_DIRECT_URL')
 });
 
 const CacheConfig = Object.freeze({
